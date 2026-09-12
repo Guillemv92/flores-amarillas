@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>para vos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="photo" src="img/phone-bouquet.png" alt="" />
+    <div class="shade"></div>
+
+    <main class="app" id="app">
+      <button class="cover" id="openBtn" type="button">
+        <span id="coverDate"></span>
+        <span class="cover-title" id="coverTitle"></span>
+        <span class="cover-hint" id="coverHint"></span>
+      </button>
+
+      <article class="sheet" id="letter" hidden>
+        <p class="sheet-date" id="letterDate"></p>
+        <h1 class="sheet-title" id="letterTitle"></h1>
+        <div class="sheet-body" id="letterBody"></div>
+        <p class="sheet-signoff" id="letterSignOff"></p>
+        <p class="sheet-signature" id="letterSignature"></p>
+      </article>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
