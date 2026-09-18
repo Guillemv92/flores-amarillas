@@ -97,9 +97,8 @@
       </p>
       <article class="card">
         <div class="left">
-          <p class="date" id="kicker">21 de septiembre</p>
-          <h1 id="title">Para Gisse</h1>
-          <p class="note">hay un pedacito más de esta carta del otro lado del QR</p>
+          <h1 id="title">Feliz primavera</h1>
+          <p class="note">escaneá el QR</p>
         </div>
         <div class="right">
           <div id="qr"></div>
@@ -112,12 +111,10 @@
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <script src="config.js"></script>
     <script>
-      document.getElementById("kicker").textContent = LETTER_CONFIG.closed.kicker;
-      document.getElementById("title").textContent = "Para " + LETTER_CONFIG.herName;
-      const qr = qrcode(0, "M");
+      const qr = qrcode(0, "H");
       qr.addData(LETTER_CONFIG.siteUrl);
       qr.make();
-      document.getElementById("qr").innerHTML = qr.createSvgTag(0, 0);
+      document.getElementById("qr").innerHTML = qr.createSvgTag(0, 4);
     </script>
   </body>
 </html>

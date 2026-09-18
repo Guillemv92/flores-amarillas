@@ -5,10 +5,22 @@
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   document.title = "para " + cfg.herName;
-  document.getElementById("coverDate").textContent = cfg.cover.date;
+
+  function fillOrHide(id, text) {
+    const el = document.getElementById(id);
+    if (!text) {
+      el.hidden = true;
+      el.textContent = "";
+      return;
+    }
+    el.hidden = false;
+    el.textContent = text;
+  }
+
+  fillOrHide("coverDate", cfg.cover.date);
   document.getElementById("coverTitle").textContent = cfg.cover.title;
   document.getElementById("coverHint").textContent = cfg.cover.hint;
-  document.getElementById("letterDate").textContent = cfg.letter.date;
+  fillOrHide("letterDate", cfg.letter.date);
   document.getElementById("letterTitle").textContent = cfg.letter.title;
   document.getElementById("letterSignOff").textContent = cfg.letter.signOff;
   document.getElementById("letterSignature").textContent = cfg.letter.signature;
