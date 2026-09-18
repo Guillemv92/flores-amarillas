@@ -14,13 +14,13 @@ const LETTER_CONFIG = {
 
   letter: {
     date: "",
-    title: "Para Gisse",
+    title: "Para Gisse 🌻",
     paragraphs: [
       "Feliz primavera.",
       "Espero que estas flores te acompañen hoy y te saquen una sonrisa.",
-      "Aunque la verdad, si tengo que elegir algo lindo de esta primavera, me quedo con haberte conocido. 😊",
+      "Y lo más lindo de esta primavera es haberte conocido.",
     ],
     signOff: "con cariño,",
-    signature: "Guille",
+    signature: "Guille 💛",
   },
 };
